@@ -1,0 +1,14 @@
+<p>
+    <img [src]="user.photo"/>
+</p>
+<p>Nom: {{user.name}} </p>
+<p>Prénom: {{user.firstName}} </p>
+
+<p *ngIf="user.showAge"> {{user.age}}</p>
+<button (click)="sayAge()">Affiche/Cache mon âge</button>
+
+<br>
+
+<!--zone de texte-->
+<p>{{user.quote}}</p>
+<input type="text" [(ngModel)]="user.quote">
